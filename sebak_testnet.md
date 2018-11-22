@@ -22,10 +22,16 @@ The minimum balance of new account.
 ### *Base Fee*
 When you send a transaction, creating an account or sending a payment, *Testnet* network charges an extra *fee* to handle your transaction. **Base Fee** is the amount charged.
 
-### TestNet 
+### TestNet and tools
 
 | endpoint | 
 | -- |
 | http://testnet-sebak.blockchainos.org| 
 
+> ## Python SDK for sebak is here ; [sebak-pyutil](https://github.com/spikeekips/sebakpy-util)
+> ## Javascript SDK for sebak is here ; [sebak-jsutil](https://github.com/bosnet/sebakjs-util)
 > ## Creating accounts should use tool, [sebak-angelbot](https://github.com/spikeekips/sebak-angelbot).
+> ## Sebak API documents is here ; [API docs](https://bosnet.github.io/sebak/api/).
+
+### Errors and Q&A
+ Please refer to this document, [When you saw the errors during testing](./sebak_I_find_errors_in_sebak_how_can_I_report). 
