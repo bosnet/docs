@@ -22,21 +22,16 @@ The minimum balance of new account.
 ### *Base Fee*
 When you send a transaction, creating an account or sending a payment, *Testnet* network charges an extra *fee* to handle your transaction. **Base Fee** is the amount charged.
 
-### TestNet 
+### TestNet and tools
 
 | endpoint | 
 | -- |
 | http://testnet-sebak.blockchainos.org| 
 
-### Initial Accounts
+> ## Python SDK for sebak is here ; [sebak-pyutil](https://github.com/spikeekips/sebakpy-util)
+> ## Javascript SDK for sebak is here ; [sebak-jsutil](https://github.com/bosnet/sebakjs-util)
+> ## Creating accounts should use tool, [sebak-angelbot](https://github.com/spikeekips/sebak-angelbot).
+> ## Sebak API documents is here ; [API docs](https://bosnet.github.io/sebak/api/).
 
-| account | initial balance | public address | secret seed |
-| -- | -- | -- |  -- |
-| `a0` | `5,000,000` | `GA5ZQ37YVVRAVKCWPFRTS6CF2LH76UNRFY76G75Q2ABDQ6QZ37G24GHO` | `SCDMSX3ITG2OAI4CYFZQKWPWU2PZDJUDOQKIUWQSDEUZ6NZDTOLOFBWO` |
-| `a1` | `5,000,000` | `GCZD2VEVDAQEYSGOHMPOTYEWTNIJBM5JS3LZCUIL23FU4PZMRTWP6ZCS` | `SBDTZW6YCQPHLW2DIMV3SSPC7LQSBJ7IKCVV6CGUOBVDXAQPOJY5WDKB` |
-| `a2` | `5,000,000` | `GB67C5RHN6EHS7MVO4ZLL3RJ3INIUXIXKZ74NVYHWW6HU3YQHMXONMXN` | `SAICU2PX2FMPRPABHU73LNDEFCMF37YNNKKDR6BSFEWREK52BXKBWKAX` |
-| `a3` | `5,000,000` | `GDKMOAHEZULSJM55MXUJ5LLHBW4QZPQHERU3ACD6MUCGB4Q2QC2E3MSJ` | `SA5YHDBS57DULW7GEGILQLSTMMNH7L5LWMAH5GDDSAYAEVTOZ3YFDVTU` |
-
-The network is initialized with 4 accounts. You can test the network with these accounts by `sebak wallet` command. For more details, please see [`sebak wallet`](SEBAK-Commands#sebak-wallet).
-
-> ## Creating accounts will be supported as soon as possible.
+### Errors and Q&A
+ Please refer to this document, [When you saw the errors during testing](./sebak_I_find_errors_in_sebak_how_can_I_report). 
