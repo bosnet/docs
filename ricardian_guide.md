@@ -14,6 +14,7 @@ proposer_account | Sebak network public address of proposer(BOScoin public addre
 execution_duration | PF execution duration(blocks) |  uint64
 amount_of_issuance | The amount of coins issued through the PF in BOS unit(BOS = 10000000Gon) | uint64
 pf_budget_account | Issued coin will be sent to PF budget account(BOScoin public address) | string
+execution_condition_ratio | The execution_ratio is used to determine the voting threshold in execution condition. The voting threshold is calculated by the execution_ratio of the number of members as of end of voting.
 execution_condition | Condition which should satisfy to pass voting | string
 definitions | definitions of terms used in proposal | collection of string
 detailed_description | Detailed description about the PF | collections of string
