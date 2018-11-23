@@ -44,6 +44,8 @@ amount_of_issuance: 160833600
 
 pf_budget_account: "GBWCMWDUZK67YNUZ44UPNVFYZRSCCS4OLE6ORWD4ZLI2MVGY4KJDPHMO"
 
+execution_condition_ratio: 0.1
+
 --- #Document contents
 
 execution_condition:
