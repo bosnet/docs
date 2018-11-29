@@ -67,7 +67,7 @@
     + operations (array)
         + (object):
             + H 
-                + type: "payment" - operation type. ex. payment, create-account
+                + type: `payment` - operation type. ex. payment, create-account
             + B
                 + target: GDTEPFWEITKFHSUO44NQABY2XHRBBH2UBVGJ2ZJPDREIOL2F6RAEBJE4 - The funded account's public key
                 + amount: 1000000000000- amount in GON
