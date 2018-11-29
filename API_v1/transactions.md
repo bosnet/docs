@@ -7,6 +7,7 @@ Transactions API
 
 ### Payment transaction  [POST] 
 
++ You can refer [this link to make transaction through sebakpy-util.](https://bosnet.github.io/how-to-make-transaction-post/)
 + Data Body consist of 3 parts, ; T, H, B
     + T : ‘transaction’
 
