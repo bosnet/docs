@@ -1,33 +1,22 @@
 ## Node State
 
-1. `BOOTING` - The node is on start but not ready to consensus or synchronize.
-1. `SYNC` - The node is ready to synchronize block but not ready for consensus.
-1. `CONSENSUS` - The node has all blocks and ready to proceed with the consensus.
-1. `TERMINATING` - The node terminates.
+1. `BOOTING` - The node is on start but not ready to consensus or sync.
+1. `SYNC` - The node is not ready for consensus because in sync.
+1. `CONSENSUS` - The node has all blocks and ready to proceed consensus.
 
-## How to check the node state is in `SYNC` or `CONSENSUS`
-All node states are checked by the flag in NodeRunner basically.
-But the points are; 
-1. Cases that node is in `SYNC` state mention below;
-   * After start, node ready to receive messages or ballots from validators.
-   * The node was in `CONSENSUS` state but when it receives `ACCEPT` ballots, block height is different with `Last Confirmed + 1`.
-2. Conditions that node is ready to `CONSENSUS` mention below;
-   * Having same height with validators.
-   * Having all blocks and transactions.
-   * All blocks have been validated.
+## How does a node determine if itself needs to sync?
+1. In [`BallotCheckSYNC`](https://github.com/bosnet/sebak/blob/master/lib/node/runner/checker.go#L181) method, a node receives B(`ACCEPT`, `YES`) only.
+1. When a node receives the ballots based same height `h` and round from greater than or equal to 67% validators, it asks validators for blocks up to `h`.
+1. But in this timing, the other nodes confirms the new block with `h+1` because it also receives enough B(`ACCEPT`, `YES`).
+1. Therefore, a node saves ballot with `h` like cache, then in next height it saves two blocks(`h` and `h+1`) at the same time.
 
-## When Node is in `SYNC` state,
-* Something is proceeded at top, middle, and bottom in blockchain simultaneosly.
-   * At the top of the blockchain,
-      1. Node gathers `ACCEPT` ballots but it doesn't validate ballots because not all previous blocks and transactions have been received at this time.
-      2. When `ACCEPT` ballots exceeds the threshold, Node saves the confirmed block in the `BLOCK POOL`.
-      3. Gathering transactions from transaction protocol.
-   * In the middle of the blockchain,
-      1. Gathering `BLOCK`s from validators.
-   * From the bottom of the blockchain,
-      1. Validation from genesis block to latest block sequentially.
-* The `SYNC` process ends and the node state will change to `CONSENSUS` mention below conditions, 
-   * having same height with validators.
-   * having all blocks and transactions.
-   * all blocks have been validated.
-
+### Example
+1. There are 4 nodes(`A`, `B`, `C`, `D`) and threshold is 3. And B(`ACCEPT`, `YES`, 10) means a ballot with `ACCEPT` state , `YES` vote and based height 10.
+   1. `A`, `B`, `C` are in height 10, but `D` is in height 5 yet.
+   1. `A`, `B`, `C` keep voting next height so `D` receives three B(`ACCEPT`, `YES`, 10) from them.
+   1. `D` requests the block up to 10 to the validators and save B(`ACCEPT`, `YES`, 10) as a cache.
+   1. In next height, `D` receives three B(`ACCEPT`, `YES`, 11) from validators as above.
+   1. The node confirms two blocks based on the ballots
+      1. Based on B(`ACCEPT`, `YES`, 10), `D` confirms the block with height 11.
+      1. Based on B(`ACCEPT`, `YES`, 11), `D` confirms the block with height 12.
+   1. It can be participate in consensus voting from 13 height.
