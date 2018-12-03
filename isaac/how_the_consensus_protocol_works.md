@@ -72,7 +72,7 @@ If the voting determines that the ballot is valid, all nodes confirm the transac
 ### `INIT`
 1. The timer is set to TIMEOUT_INIT.
 1. The steps to propose transactions are as follows.
-   * If the node is [proposer](./tech_how_to_select_the_proposer.md) of this round, it broadcasts a B(`INIT`, `YES`),
+   * If the node is [proposer](how_to_select_the_proposer.md) of this round, it broadcasts a B(`INIT`, `YES`),
       * The ballot includes valid transactions(only hashes) or empty(If the transaction pool is empty).
       * When the node broadcasts the ballot, the node goes to the next state.
    * If the node is not `proposer`, it waits until receiving the B(`INIT`, `YES`).
@@ -81,7 +81,7 @@ If the voting determines that the ballot is valid, all nodes confirm the transac
 
 ### `SIGN`
 1. The timer is reset to TIMEOUT_SIGN.
-1. The node checks [the proposed ballot is valid](./tech_how_to_check_a_ballot_is_valid.md).
+1. The node checks [the proposed ballot is valid](how_to_check_a_ballot_is_valid.md).
    * If the proposed ballot is valid(or empty), the node broadcasts B(`SIGN`, `YES`).
    * If the proposed ballot is invalid, the node broadcasts B(`SIGN`, `NO`).
    * When the timer expires, the node hasn't sent a ballot in `SIGN` state yet, it broadcasts B(`SIGN`, `EXP`).
@@ -95,17 +95,17 @@ If the voting determines that the ballot is valid, all nodes confirm the transac
 1. When the timer expires, the node hasn't sent a ballot in `ACCEPT` state yet, it broadcasts B(`ACCEPT`, `EXP`).
 1. Each node receives ballots and,
    * if the number of B(`ACCEPT`, `YES`) is greater than or equal to 67% of validators, the node goes to the next state.
-   * if the number of B(`ACCEPT`, `NO`) or B(`ACCEPT`, `EXP`) is greater than 33% of validators, 
+   * if the number of B(`ACCEPT`, `NO`) or B(`ACCEPT`, `EXP`) is greater than 33% of validators,
       the node goes back to `INIT` state with same height and round + 1.
 
 ### `ALL-CONFIRM`
 1. the node confirms and saves the block with proposed transactions even though it is empty.
-1. the node filters [invalid transactions](./tech_how_to_check_a_ballot_is_valid.md#transaction-validation) in the transaction pool.
+1. the node filters [invalid transactions](how_to_check_a_ballot_is_valid.md#transaction-validation) in the transaction pool.
 1. It goes to `INIT` state with height + 1 and round 0.
 
 ### `INIT`
-* If the node is `proposer`, it waits for [block time buffer](./tech_how_to_calculate_block_time_buffer.md) and propose.
+* If the node is `proposer`, it waits for [block time buffer](how_to_calculate_block_time_buffer.md) and propose.
 * Else, it waits for `block time buffer` + TIMEOUT_INIT to receive proposed ballot.
 
 ## Transaction Protocol
-1. [`Transaction Protocol`](./tech_how_transactions_are_shared.md) is a protocol for sharing transactions between the nodes.
+1. [`Transaction Protocol`](how_transactions_are_shared.md) is a protocol for sharing transactions between the nodes.

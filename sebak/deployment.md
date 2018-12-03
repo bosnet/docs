@@ -6,7 +6,7 @@ To deploy the sebak network, the basic steps are mentioned below.
 
 If you deployed network already, you should skip generating genesis block .
 
-You can run SEBAK in standalone mode, please check [Running Standalone Mode](./sebak_deployment_standalone.md).
+You can run SEBAK in standalone mode, please check [Running Standalone Mode](deployment_standalone.md).
 
 # How To Compose Network
 
@@ -37,26 +37,26 @@ $ sebak key generate
     Public Address: GALQG5SCKCPXUG4ODPMFZJGZ6XBVJTLAJFR7OJKJOJVARA7M4H5SGSOG
 ```
 
-For the Genesis block generation, 2 sets of key pairs(required), network id (required) and storage location(optional) are necessary. 
-First key pair which secret seed and public address meant to be genesis block, 2nd key pair meant to be common budget account. 
-Network id is the unique key phrase to distinguish its network.  
-Storage mention specific location for save data. 
+For the Genesis block generation, 2 sets of key pairs(required), network id (required) and storage location(optional) are necessary.
+First key pair which secret seed and public address meant to be genesis block, 2nd key pair meant to be common budget account.
+Network id is the unique key phrase to distinguish its network.
+Storage mention specific location for save data.
 Details are looking below.
- 
+
 ```
 $ sebak genesis \
     --network-id "this-is-test-sebak-network" \
     --storage "file:///tmp/db-n0" \ ( You can set up storage location as you want. )
      GCXOTSI6IXZNIEYWVJBPZV4VFK7IEQVHRPIC7TFTIN4FFXYK7BVUBCOU ( Genesis block public address. This public address is example.)
      GBLZVWCICHM4ZFCK2M5IRFOQLANTGT53GX2BEKOQ75FJ2TDK6OEQAF4U ( Common account public address. This public address is example.)
-    
+
 
 
 INFO[10-29|14:57:28] genesis block created      module=main height=1 round=0 timestamp=2018-10-29T14:57:28+0900 total-txs=1 total-ops=2 proposer=
 successfully created genesis block
 ```
 
-> You can also check the usage of `sebak key generate` in [SEBAK Commands](./sebak_command.md#sebak-genesis).
+> You can also check the usage of `sebak key generate` in [SEBAK Commands](command.md#sebak-genesis).
 
 You should make genesis block in every nodes
 
