@@ -8,21 +8,25 @@ There are two protocols in `SEBAK`. One is `ISAAC` protocol for consensus and an
 The `ISAAC` is a consensus protocol based on [`PBFT`](http://pmg.csail.mit.edu/papers/osdi99.pdf).
 In the `ISAAC`, all nodes will vote two times to determine which transactions to include in this block.
 For each voting unit, the nodes have the role `proposer` or` validator`.
-The `proposer` gathers the transactions for this vote and puts them in a ballot and passes it to the `validator`.
+The `proposer` gathers the transactions for this vote and puts them in a ballot and passes it to the `validator`s.
 The `validator` checks that the transactions in the ballot are valid and then votes.
 If the voting determines that the ballot is valid, all nodes confirm the transactions in the ballot.
 
 ## State Diagram
 
-                                    'Height + 1'
-     +----------------------------------------------------------------------------------+
-     |                                                                                  |
-     v    'get ballot'               'get 67% of YES'           'get 67% of YES'        |
-    INIT --------------------> SIGN ------------------> ACCEPT ------------------> ALL_CONFIRM
-      ^                         |                         |
-      |   'get 34% of NO or EXP'|   'get 34% of NO or EXP'|
-      +-------------------------+-------------------------+
-                     'Round + 1'
+                                          'Height + 1'
+      ┌──────────────────────────────────────────────────────────────────────────────────┐
+      ╎                                                                                  ╎
+      ╎                                                                                  ╎
+      ╎    'get ballot'               'get 67% of YES'           'get 67% of YES'        ╎
+      ▼                                                                                  ╎
+     INIT ────────────────────> SIGN ──────────────────> ACCEPT ──────────────────> ALL_CONFIRM
+      ▲                          ╎                         ╎
+      ╎                          ╎                         ╎
+      ╎  'get 34% of NO or EXP'  ╎  'get 34% of NO or EXP' ╎
+      ╎                          ╎                         ╎
+      └────────────────────────────────────────────────────┘
+                           'Round + 1'
 
 ## `ISAAC` States
 1. `INIT` - Proposed or received a ballot with transactions.
