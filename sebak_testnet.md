@@ -24,9 +24,9 @@ When you send a transaction, creating an account or sending a payment, *Testnet*
 
 ### TestNet and tools
 
-| endpoint | 
+| endpoint |
 | -- |
-| http://testnet-sebak.blockchainos.org| 
+| http://testnet-sebak.blockchainos.org|
 
 > ## Python SDK for sebak is here ; [sebak-pyutil](https://github.com/spikeekips/sebakpy-util)
 > ## Javascript SDK for sebak is here ; [sebak-jsutil](https://github.com/bosnet/sebakjs-util)
@@ -34,4 +34,5 @@ When you send a transaction, creating an account or sending a payment, *Testnet*
 > ## Sebak API documents is here ; [API docs](https://bosnet.github.io/sebak/api/).
 
 ### Errors and Q&A
- Please refer to this document, [When you saw the errors during testing](./sebak_I_find_errors_in_sebak_how_can_I_report). 
+
+ Please refer to our [documentation](./sebak_reporting_issue) to report an issue.
