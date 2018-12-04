@@ -35,4 +35,4 @@ When you send a transaction, creating an account or sending a payment, *Testnet*
 
 ### Errors and Q&A
 
- Please refer to our [documentation](./sebak_reporting_issue) to report an issue.
+ Please refer to our [documentation](reporting_issue.md) to report an issue.
