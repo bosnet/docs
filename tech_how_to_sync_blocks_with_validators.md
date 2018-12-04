@@ -1,8 +1,9 @@
 ## Node State
 
-1. `BOOTING` - The node is on start but not ready to consensus or sync.
-1. `SYNC` - The node is not ready for consensus because in sync.
+1. `BOOTING`   - The node is on start but not ready to consensus or sync.
 1. `CONSENSUS` - The node has all blocks and ready to proceed consensus.
+1. `SYNC`      - The node is not ready for consensus because in sync.
+1. `WATCH`     - The node watches it's validators and try to sync. This node does not participate in the consensus.
 
 ## How does a node determine if itself needs to sync?
 1. In [`BallotCheckSYNC`](https://github.com/bosnet/sebak/blob/master/lib/node/runner/checker.go#L181) method, a node receives B(`ACCEPT`, `YES`) only.
