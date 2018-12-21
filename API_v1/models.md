@@ -33,8 +33,7 @@
         + fee: 10000
         + hash: `7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs`
         + operation_count: 1
-        
-        + operations:(array)
+        + operations
             + (object):
                 + H
                     + type : `payment` - operation type. ex. payment, create-account
