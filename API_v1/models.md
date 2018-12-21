@@ -33,13 +33,12 @@
         + fee: 10000
         + hash: `7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs`
         + operation_count: 1
-        + operations
-            + (object):
-                + H
-                    + type : `payment` - operation type. ex. payment, create-account
-                + B
-                    + target : `GCIKBR6QXYF6VLLTXC7EHKDGAPAOLSRALZTWTLZ2SANBYWMWT6AURQGG`
-                    + amount : `100000` - amount in GON
+        + operations (array)
+            + H
+                + type : `payment` - operation type. ex. payment, create-account
+            + B
+                + target : `GCIKBR6QXYF6VLLTXC7EHKDGAPAOLSRALZTWTLZ2SANBYWMWT6AURQGG`
+                + amount : `100000` - amount in GON
         + sequence_id: 0
         + source: `GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ`
 + _links
@@ -136,7 +135,6 @@
         + body
             + target: GDEPYGGALPJ5HENXCNOQJPPDOQMA2YAXPERZ4XEAKVFFJJEVP4ZBK6QI - The funded account's public key
             + amount: `1000000000000` - amount in GON
-        
         + confirmed: `2018-11-27T07:49:05.971799020Z`
         + hash: F6SEv2QhgwZwxUARbRacxyZaufzcTxdYDXJBpvf7pNAj-7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs - Hash of operation
         + index: 0
