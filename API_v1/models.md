@@ -33,8 +33,9 @@
         + fee: 10000
         + hash: `7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs`
         + operation_count: 1
-        + operation (array)
-            + (object) :
+        
+        + operations:(array)
+            + (object):
                 + H
                     + type : `payment` - operation type. ex. payment, create-account
                 + B
@@ -71,7 +72,7 @@
     + source: GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ - Source account
     + fee: 10000 - The fee paid by the source account for this transaction. Minimum is 10000 GON
     + sequence_id: 0 - The last sequence number of the source account
-    + operations (array)
+    + operations:(array)
         + (object):
             + H
                 + type: `payment` - operation type. ex. payment, create-account
@@ -90,7 +91,7 @@
     + source: GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ - Source account
     + fee: `10000` - The fee paid by the source account for this transaction. Minimum is 10000 GON
     + sequence_id: 0 - The last sequence number of the source account
-    + operations (array)
+    + operations:(array)
         + (object):
             + H
                 + type: `create-account` - operation type. ex. payment, create-account
@@ -144,7 +145,7 @@
         + source: GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ - Source account
         + target: GDEPYGGALPJ5HENXCNOQJPPDOQMA2YAXPERZ4XEAKVFFJJEVP4ZBK6QI - The funded account's public key
         + tx_hash: 7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs - Hash of transaction
-        + type: create-account  - operation type. ex. payment, create-account
+        + type: `create-account`  - operation type. ex. payment, create-account
     
     + _links
         + next
@@ -187,7 +188,7 @@
         + href: `/api/v1/blocks/AcFpZMr6EhxBuCw3xADUzepa395wmh3c5fo2cyxYCi1q`
 + confirmed: 2018-11-18T18:44:47.900933000+09:00
 + hash: `AcFpZMr6EhxBuCw3xADUzepa395wmh3c5fo2cyxYCi1q`
-+ height: 3 
++ height: 3
 + prev_block_hash: `J8TQCCtsiLcRZpYtVN3ozCFByd24fjXe2BgodLkeXN7S`,
 + proposed_time: `2018-04-17T5:07:31.000000000Z`
 + proposer: `GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ`
