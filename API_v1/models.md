@@ -33,12 +33,13 @@
         + fee: 10000
         + hash: `7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs`
         + operation_count: 1
-        + operations (array)
-            + H
-                + type : `payment` - operation type. ex. payment, create-account
-            + B
-                + target : `GCIKBR6QXYF6VLLTXC7EHKDGAPAOLSRALZTWTLZ2SANBYWMWT6AURQGG`
-                + amount : `100000` - amount in GON
+        + operations: 
+            + (array)
+                + H
+                    + type : `payment` - operation type. ex. payment, create-account
+                + B
+                    + target : `GCIKBR6QXYF6VLLTXC7EHKDGAPAOLSRALZTWTLZ2SANBYWMWT6AURQGG`
+                    + amount : `100000` - amount in GON
         + sequence_id: 0
         + source: `GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ`
 + _links
