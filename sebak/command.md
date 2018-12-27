@@ -125,7 +125,7 @@ Flags:
       --rate-limit-node list                rate limit for /node: [<ip>=]<limit>-<period>, ex) '10-S' '3.3.3.3=1000-M'
       --secret-seed string                  secret seed of this node
       --set-congress-address string         set congress address
-      --storage string                      storage uri (default "file:///Users/spikeekips/workspace/blockchainos/sebak/src/boscoin.io/sebak/db")
+      --storage string                      storage uri (default "file:///Users/{username}/workspace/blockchainos/sebak/src/boscoin.io/sebak/db")
       --sync-check-interval string          sync check interval (default "30s")
       --sync-check-prevblock string         sync check interval for previous block (default "30s")
       --sync-fetch-timeout string           sync fetch timeout (default "1m")
