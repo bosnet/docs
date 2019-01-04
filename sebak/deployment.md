@@ -8,18 +8,6 @@ If you deployed network already, you should skip generating genesis block .
 
 You can run SEBAK in standalone mode, please check [Running Standalone Mode](deployment_standalone.md).
 
-# How To Compose Network
-
-As introduced, to compose network is the making small group of nodes, *quorum* and it will be first step. There are several rules to make *quorum*.
-
-* One *quorum* should include 4 or more nodes at least, but for testing 3 nodes can be possible.
-* In case of composing several *quorums*, each *quorum* must contain nodes in common with the other quorum. You can understand more specific to see below example; composing 2 quorums and each quorum has these nodes
-
-    - quorum #0: node0, node1, node2, **node3**, **node4**
-    - quorum #1: **node3**, **node4**, node5, node6, node7
-
-"quorum #0" and "quorum #1" have common nodes, "node3", "node4", these composition of *quorum*, we call, *quorum intersection* and the common nodes is *quorum intersected nodes*. Without *quorum* intersection, the network can not reach agreement. In this page, we will introduce a example for one *quorum* and 3 nodes.
-
 The `network-id` is `this-is-test-sebak-network`.
 
 # Genesis Block generation
