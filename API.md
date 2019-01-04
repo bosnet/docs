@@ -1,5 +1,5 @@
 FORMAT: 1A
-HOST: https://mainnet.blockchainos.org/
+HOST: https://mainnet.blockchainos.org
 
 # Sebak Client API
 SEBAK, the next BOScoin network with ISAAC consensus protocol. 
