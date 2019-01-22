@@ -1,11 +1,9 @@
 # Introduction
 
-Documentation for [BOScoin](http://boscoin.io)'s projects, mainly Sebak, its node implementation with the [ISAAC consensus protocol](https://boscoin.io/article/introduction-of-isaac-consensus-protocol-for-bosnet/).
+Documentation for [BOScoin](http://boscoin.io)'s projects, mainly Sebak, its node implementation with the [ISAAC consensus protocol](http://devteam.blockchainos.org/introduction-isaac-consensus-protocol-betterment/).
 
 # ISAAC
 
-ISAAC consensus protocol is based on FBA(Federated Byzantine Agreement) consensus protocol. The basic idea of ISAAC and FBA is so simple, nodes are connected each other in small group that can make agreement.  And entire connected groups can reach the same agreement results from small group. This small group of nodes, we call it `quorum` and entire group will be union of quorums. For more information about ISAAC and FBA, you can see [ISAAC consensus protocol for BOSNet](https://boscoin.io/article/introduction-of-isaac-consensus-protocol-for-bosnet/) and [The Stellar Consensus Protocol: A Federated Model for Internet-level Consensus](https://www.stellar.org/papers/stellar-consensus-protocol.pdf).
+The ISAAC is a consensus protocol based on PBFT. In the ISAAC, all nodes will vote two times to determine which transactions to include in this block. For each voting unit, the nodes have the role proposer or validator. The proposer gathers the transactions for this vote and puts them in a ballot and passes it to the validators. The validator checks that the transactions in the ballot are valid and then votes. If the voting determines that the ballot is valid, all nodes confirm the transactions in the ballot. For more information about ISAAC, you can see [ISAAC consensus protocol for BOSNet](http://devteam.blockchainos.org/introduction-isaac-consensus-protocol-betterment/).
 
-For Korean developers, we [translated the SCP paper to Korean](https://github.com/bosnet/papers/blob/master/The-Stellar-Consensus-Protocol/The-Stellar-Consensus-Protocol.md).
-
-This documentation is also [available online](https://bosnet.github.io/sebak/api/).
+This documentation is also [available online](http://devteam.blockchainos.org).
