@@ -1,4 +1,4 @@
-To install `sebak` command, please check the [installation guide](installation.md).
+# SEBAK command
 
 # Options
 ```sh
@@ -113,11 +113,8 @@ Flags:
       --log string                          set log file
       --log-format string                   log format, {terminal, json} (default "terminal")
       --log-level string                    log level, {crit, error, warn, info, debug} (default "info")
-      --log-rotate-max-count string         max count of rotated logs (default "0")
-      --log-rotate-max-days string          max days of rotated logs (default "0")
-      --log-rotate-max-size string          max size of rotate log (default "100")
-      --log-rotate-uncompress               disable compression of rotate log
       --network-id string                   network id
+      --ntp string                          ntp server for time sync (default "time.bora.net")
       --operations-in-ballot-limit string   operations limit in a ballot (default "10000")
       --operations-limit string             operations limit in a transaction (default "1000")
       --publish string                      endpoint url for other nodes
@@ -132,6 +129,7 @@ Flags:
       --sync-pool-size string               sync pool size (default "300")
       --sync-retry-interval string          sync retry interval (default "10s")
       --threshold string                    threshold (default "67")
+      --time-sync-command string            command for syncing local time
       --timeout-accept string               timeout of the accept state (default "2s")
       --timeout-allconfirm string           timeout of the allconfirm state (default "30s")
       --timeout-init string                 timeout of the init state (default "2s")
@@ -192,10 +190,10 @@ Usage:
 
 Flags:
       --dry-run             Print the transaction instead of sending it
-      --endpoint string     endpoint to send the transaction to (https / memory address)
-  -h, --help                help for unfreezeRequest
-      --network-id string   network id
-      --verbose             Print extra data (transaction sent)
+      —endpoint string     endpoint to send the transaction to (https / memory address)
+  -h, —help                help for unfreezeRequest
+      —network-id string   network id
+      —verbose             Print extra data (transaction sent)
 ```
 
 ## `sebak version`
@@ -203,5 +201,5 @@ Flags:
 This command for print current version.
 ```sh
 $ sebak version
-0.1.X
+version= git= build=
 ```
