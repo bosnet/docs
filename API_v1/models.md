@@ -28,7 +28,7 @@
                     + templated: true
                 + self
                     + href: `/api/v1/transactions`
-        + block: `241`
+        + block: `DVVRGpX56x8wjPfNp5nGsgpW2YuhPNHGAd1g6R9g8mBQ`
         + created: `2018-11-02T14:09:33.019606000+09:00`
         + fee: 10000
         + hash: `7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs`
