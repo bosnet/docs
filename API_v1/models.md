@@ -28,11 +28,18 @@
                     + templated: true
                 + self
                     + href: `/api/v1/transactions`
-        + block: `241`
+        + block: `DVVRGpX56x8wjPfNp5nGsgpW2YuhPNHGAd1g6R9g8mBQ`
         + created: `2018-11-02T14:09:33.019606000+09:00`
         + fee: 10000
         + hash: `7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs`
         + operation_count: 1
+        + operations:
+            + (array)
+                + H
+                    + type : `payment` - operation type. ex. payment, create-account
+                + B
+                    + target : `GCIKBR6QXYF6VLLTXC7EHKDGAPAOLSRALZTWTLZ2SANBYWMWT6AURQGG`
+                    + amount : `100000` - amount in GON
         + sequence_id: 0
         + source: `GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ`
 + _links
@@ -64,16 +71,16 @@
     + source: GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ - Source account
     + fee: 10000 - The fee paid by the source account for this transaction. Minimum is 10000 GON
     + sequence_id: 0 - The last sequence number of the source account
-    + operations (array)
+    + operations:(array)
         + (object):
-            + H 
+            + H
                 + type: `payment` - operation type. ex. payment, create-account
             + B
                 + target: GDTEPFWEITKFHSUO44NQABY2XHRBBH2UBVGJ2ZJPDREIOL2F6RAEBJE4 - The funded account's public key
                 + amount: 1000000000000- amount in GON
 
-### Transaction Post 
-+ _links  
+### Transaction Post
++ _links
     + history
         + href: `/api/v1/transactions/7mRUj4cnUPaTrpByojPsT3xoRRdwG6Q9z2eLyCMapQm6/history`
     + self
@@ -83,17 +90,17 @@
     + source: GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ - Source account
     + fee: `10000` - The fee paid by the source account for this transaction. Minimum is 10000 GON
     + sequence_id: 0 - The last sequence number of the source account
-    + operations (array)
+    + operations:(array)
         + (object):
             + H
-                + type:create-account - operation type. ex. payment, create-account
+                + type: `create-account` - operation type. ex. payment, create-account
             + B
                 + target: GDTEPFWEITKFHSUO44NQABY2XHRBBH2UBVGJ2ZJPDREIOL2F6RAEBJE4 - The funded account's public key
                 + amount: 1000000000000- amount in GON
 + status: `submitted` - three categories of status; submitted, confirmed, rejected
 
 ### Transaction
-+ _links 
++ _links
     + account
         + href: `/api/v1/accounts/GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ`
     + operations
@@ -106,6 +113,13 @@
 + fee: `10000` (string) - The fee paid by the source account
 + hash: `ghf6msRhE4jRf5DPib9UHD1msadvmZs9o53V9FQTb11` (string,required) - Hash of transaction. //TODO: link for the details
 + operation_count: 1 (number) - The number of operations in this transaction.
++ operations:(array)
+    + (object):
+        + H
+            + type : `payment` - operation type. ex. payment, create-account
+        + B
+            + target : GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ`
+            + amount : 200
 + sequence_id: 0 (number) - the Sequence number of the source account.
 + source: `GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ` (string) -
         
@@ -122,13 +136,14 @@
         + body
             + target: GDEPYGGALPJ5HENXCNOQJPPDOQMA2YAXPERZ4XEAKVFFJJEVP4ZBK6QI - The funded account's public key
             + amount: `1000000000000` - amount in GON
-        
         + confirmed: `2018-11-27T07:49:05.971799020Z`
         + hash: F6SEv2QhgwZwxUARbRacxyZaufzcTxdYDXJBpvf7pNAj-7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs - Hash of operation
+        + index: 0
         + proposed_time: `2018-11-27T07:49:05.942922134Z`
         + source: GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ - Source account
+        + target: GDEPYGGALPJ5HENXCNOQJPPDOQMA2YAXPERZ4XEAKVFFJJEVP4ZBK6QI - The funded account's public key
         + tx_hash: 7nLuyg8radTExzBM2WhG37AwohBwEySBw4vj2xdtdjAs - Hash of transaction
-        + type: create-account  - operation type. ex. payment, create-account
+        + type: `create-account`  - operation type. ex. payment, create-account
     
     + _links
         + next
@@ -171,7 +186,7 @@
         + href: `/api/v1/blocks/AcFpZMr6EhxBuCw3xADUzepa395wmh3c5fo2cyxYCi1q`
 + confirmed: 2018-11-18T18:44:47.900933000+09:00
 + hash: `AcFpZMr6EhxBuCw3xADUzepa395wmh3c5fo2cyxYCi1q`
-+ height: 3 
++ height: 3
 + prev_block_hash: `J8TQCCtsiLcRZpYtVN3ozCFByd24fjXe2BgodLkeXN7S`,
 + proposed_time: `2018-04-17T5:07:31.000000000Z`
 + proposer: `GDIRF4UWPACXPPI4GW7CMTACTCNDIKJEHZK44RITZB4TD3YUM6CCVNGJ`
@@ -190,5 +205,5 @@
 
 ### Problem NotFound
 + status: 400 (number)
-+ title: `does not exists` 
++ title: `does not exists`
 + type: `https://boscoin.io/sebak/error/128`
