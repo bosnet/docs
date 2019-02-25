@@ -1,8 +1,14 @@
+---
+layout: post
+permalink: /SEBAK-deployment-standalone/
+---
+---
+# SEBAK deployment standalone
 By the nature of design, SEBAK should be deployed as composition of nodes and they should tightly connected for consensus. This standalone mode recommend only for testing and debugging. With standalone mode, you do not need to compose quorum and another server. It does not make consensus, just execute incoming messages including transactions, but it do the right work, such as inflation, collecting transaction fee, etc.
 
 ## Installation
 
-Please follow the [Installation](installation.md). If you are so busy and you already have golang (1.11 or higher) environment, do like this,
+Please follow the [Installation](./sebak_installation.md). If you are so busy and you already have golang (1.11 or higher) environment, do like this,
 
 ```sh
 $ git clone https://github.com/bosnet/sebak.git /tmp/sebak-standalone
@@ -20,7 +26,7 @@ You will get the executable `./sebak`. You can use it to deploy.
 
 ## Deploy
 
-> For the detailed deployment instruction, please check [Deploy Network](deployment.md).
+> For the detailed deployment instruction, please check [Deploy Network](./sebak_deployment.md).
 
 For standalone mode, SEBAK already prepared the special command, `self`. You can simply give only `self` in `--validators` option. Then you will get the standalone mode of SEBAK.
 
@@ -38,7 +44,7 @@ $ sebak key generate # for node
     Public Address: GCEQ4M573WODOWCAVBKJBVLLT2MIQ6ZDUYCU6SXFGLKYKL5IWU6JTCBW
 ```
 
-2. Initialize sebak with genesis block. You have to put network id, genesis public address and common account public address in cmd.
+2. Initialize sebak with genesis block. You have to put network id, genesis public address and common account public address in cmd. 
 ```sh
 $ sebak genesis \
     --network-id "this-is-sebak-standalone" \
@@ -78,7 +84,7 @@ DBUG[10-07|13:47:20] parsed flags:                            module=main
 
 ## Testing
 
-For usage of SEBAK commands, plese check [`sebak` commands](command.md).
+For usage of SEBAK commands, plese check [`sebak` commands](./sebak_command.md).
 
 ### Creating Account
 
@@ -88,7 +94,7 @@ $ sebak key generate # for new account
     Public Address: GCQ3RMPRKH5OCFNFCUB33GIV3OSCJXSTIXTMZOSWXYZYJGANYDJ6NOA3
 ```
 
-For Create account, you should put 1 public address for account create and a genesis block secret seed ( or secret key ).
+For Create account, you should put 1 public address for account create and a genesis block secret seed ( or secret key ). 
 
 ```sh
 $ sebak wallet payment \

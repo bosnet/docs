@@ -1,3 +1,9 @@
+---
+layout: post
+permalink: /how-block-inflation-works/
+---
+---
+
 # How block inflation works?
 
 BOSnet possesse common budeget account.

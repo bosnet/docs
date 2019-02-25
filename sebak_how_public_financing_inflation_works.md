@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /how-pf-inflation-works/
+---
+---
 # How public financing inflation works?
 
 ## PF inflation

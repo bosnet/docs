@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /Sebak-errors/
+---
+---
 # Sebak Errors
 
 ## Response

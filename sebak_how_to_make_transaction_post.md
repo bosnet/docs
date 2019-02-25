@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /how-to-make-transaction-post/
+---
+---
 # How to make transaction post?
 
 Transaction submit to SEBAK main net and write in blockchain when after transaction confirmed .

@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /how-to-report-issue/
+---
+---
 # How to report issues ?
 
 All the development happens on Github, on public projects.

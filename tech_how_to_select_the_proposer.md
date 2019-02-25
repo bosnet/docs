@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /how-to-select-the-proposer/
+---
+---
 # How to select the proposer
 
 The proposer is selected based on block height and round.

@@ -1,4 +1,9 @@
-## Watcher node mode
+---
+layout: post
+permalink: /watcher-node-mode/
+---
+---
+### Watcher node mode
 
 There are several node types in Sebak network. One of these is Watcher, this will sync the entire data from validator nodes or other watcher nodes, so you can monitor all the operations in the network.
 

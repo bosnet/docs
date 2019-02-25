@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /what-is-gon/
+---
+---
 # What is GON?
 
 1 BOS == 10,000,000 GON

@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /how-to-sync-blocks-with-validators/
+---
+---
 ## Node State
 
 1. `BOOTING`   - The node is on start but not ready to consensus or sync.

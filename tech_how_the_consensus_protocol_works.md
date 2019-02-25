@@ -1,3 +1,8 @@
+---
+layout: post
+permalink: /how-the-consensus-protocol-works/
+---
+---
 # How the consensus protocol works
 
 # Consensus Protocol
@@ -104,7 +109,7 @@ If the voting determines that the ballot is valid, all nodes confirm the transac
 1. It goes to `INIT` state with height + 1 and round 0.
 
 ### `INIT`
-* If the node is `proposer`, it waits for [block time buffer](how_to_calculate_block_time_buffer.md) and propose.
+* If the node is `proposer`, it waits for [block time buffer](tech_how_to_calculate_block_time_buffer.md) and propose.
 * Else, it waits for `block time buffer` + TIMEOUT_INIT to receive proposed ballot.
 
 ## Transaction Protocol
