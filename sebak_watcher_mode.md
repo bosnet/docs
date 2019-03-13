@@ -42,7 +42,7 @@ To avoid validator's rate limit, the following settings are recommended in outsi
 
 This is basic example of watcher node.
 
-####Environment Setting(for MainNet)
+#### Environment Setting(for MainNet)
 ```
 # -*- sh -*-
 export SEBAK_SECRET_SEED=SBMMSJXY5ZFYCJU25QXW3WHAUFN5QZLF7LS34FDWIT4S6YEN5B6DNCCH
@@ -65,7 +65,7 @@ export SEBAK_WATCHER_MODE=1
 export SEBAK_DISCOVERY=https://mainnet-node-0.blockchainos.org:443
 ```
 
-####Environment Setting(for TestNet)
+#### Environment Setting(for TestNet)
 ```
 export SEBAK_SECRET_SEED=SBMMSJXY5ZFYCJU25QXW3WHAUFN5QZLF7LS34FDWIT4S6YEN5B6DNCCH
 export SEBAK_PUBLIC_KEY=GBVGD37OGCFNJS3TEL5PANSQ6FMGAVOZBTWDIGUX2RS7TY2IMAIONRKX
