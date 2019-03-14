@@ -43,7 +43,7 @@ To avoid validator's rate limit, the following settings are recommended in outsi
 This is basic example of watcher node.
 
 #### Environment Setting(for MainNet)
-```
+```sh
 # -*- sh -*-
 export SEBAK_SECRET_SEED=SBMMSJXY5ZFYCJU25QXW3WHAUFN5QZLF7LS34FDWIT4S6YEN5B6DNCCH
 export SEBAK_PUBLIC_KEY=GBVGD37OGCFNJS3TEL5PANSQ6FMGAVOZBTWDIGUX2RS7TY2IMAIONRKX
@@ -65,7 +65,8 @@ export SEBAK_DISCOVERY=https://mainnet-node-0.blockchainos.org:443
 ```
 
 #### Environment Setting(for TestNet)
-```
+```sh
+# -*- sh -*-
 export SEBAK_SECRET_SEED=SBMMSJXY5ZFYCJU25QXW3WHAUFN5QZLF7LS34FDWIT4S6YEN5B6DNCCH
 export SEBAK_PUBLIC_KEY=GBVGD37OGCFNJS3TEL5PANSQ6FMGAVOZBTWDIGUX2RS7TY2IMAIONRKX
 export SEBAK_BIND=https://0.0.0.0:12345
@@ -85,7 +86,9 @@ export SEBAK_WATCHER_MODE=1
 export SEBAK_DISCOVERY=http://testnet-sebak-4n-0.blockchainos.org/
 ```
 
-$ sebak node --genesis=${SEBAK_GENESIS_BLOCK},${SEBAK_COMMON},${SEBAK_BALANCE}
+```
+$ sebak node --genesis="${SEBAK_GENESIS_BLOCK},${SEBAK_COMMON},${SEBAK_BALANCE}"
+```
 
 This watcher node can be accessed through https://localhost:12345.
 To change location of storage, you can modify the setting of `SEBAK_STORAGE`.
