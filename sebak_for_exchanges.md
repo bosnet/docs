@@ -22,11 +22,11 @@ In case of you have seen unexpected errors or have questions,
 
 ### Sebak Installation
 
-Please check [SEBAK installation](SEBAK-Installation-Guide).
+Please check [SEBAK installation](docs/SEBAK-installation/).
 
 ### Running Sebak on localhost (a.k.a 'standalone mode')
 
-Please check contents in [standalone mode](Running-Standalone-Mode).
+Please check contents in [standalone mode](docs/SEBAK-deployment-standalone/).
 
 ### Installation sebak-angelbot, the account creation tool
 
@@ -36,7 +36,7 @@ You can check specific information in the project page, [sebak-angelbot](https:/
 
 #### How to create account using 'sebak-angelbot'?
 
-- Running sebak node as [standalone](Running-Standalone-Mode) mode.
+- Running sebak node as [standalone](docs/SEBAK-deployment-standalone/) mode.
 - Execute sebak command `$ sebak key generate` as much as you want. this key pair will be used to create new account in sebak node. We recommend almost 100 keypair.
 - Open text editor and put secret-keys line by line and save in `sources.txt` file.
 - Running 'sebak-angelbot' in your localhost. In 'sebak-anglebot' command line options, we recommend `--secret-seed` to be secret seed of `genesis account`.
@@ -45,14 +45,14 @@ You can check specific information in the project page, [sebak-angelbot](https:/
 
 ### Test API in localhost environment
 
-You can check [Sebak API document contents](https://bosnet.github.io/sebak/api/).
+You can check [Sebak API document contents](https://bosnet.github.io/docs/api).
 
 #### How to make transaction??
 **required below data format & data**
 
 * All data must be sent through `POST` method
 * `Content-type` must be `application/json`
-* The structure of transaction, you can check in [API doc for Post Transaction](https://bosnet.github.io/sebak/api/#trasactions-transactions-post).
+* The structure of transaction, you can check in [API doc for Post Transaction](https://bosnet.github.io/docs/api/#trasactions-transactions-post).
 * BOScoin devteam is still developing the official SDK for various language and environments. At this time, you can use these,
 
     - [sebakjs-util](https://github.com/bosnet/sebakjs-util): Javascript library
@@ -64,7 +64,7 @@ You can check [Sebak API document contents](https://bosnet.github.io/sebak/api/)
 **NOTE: SEBAK only supports HTTP/2.**
 
 ### Sebak public Testnet
-You can access https://testnet-sebak.blockchainos.org . You can test sebak API, [API docs](https://bosnet.github.io/sebak/api/).
+You can access https://testnet-sebak.blockchainos.org . You can test sebak API, [API docs](https://bosnet.github.io/docs/api/).
 
 ### 'sebak-angelbot' for testing.
 You can access https://testnet-angelbot.blockchainos.org .
