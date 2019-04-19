@@ -57,6 +57,7 @@ You can check [Sebak API document contents](https://bosnet.github.io/sebak/api/)
 
     - [sebakjs-util](https://github.com/bosnet/sebakjs-util): Javascript library
     - [sebakpy-util](https://github.com/spikeekips/sebakpy-util): Python library
+    - [sebakjava-util](https://github.com/MegaSolar/sebakJ-util):Java library for sebak
 
 ## Instruction test on Public Testnet
 
