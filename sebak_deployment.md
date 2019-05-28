@@ -12,7 +12,7 @@ To deploy the sebak network, the basic steps are mentioned below.
 
 If you deployed network already, you should skip generating genesis block .
 
-You can run SEBAK in standalone mode, please check [Running Standalone Mode](./sebak_deployment_standalone.md).
+You can run SEBAK in standalone mode, please check [Running Standalone Mode](http://devteam.blockchainos.org/docs/SEBAK-deployment-standalone/).
 
 The `network-id` is `this-is-test-sebak-network`.
 
@@ -48,7 +48,7 @@ INFO[10-29|14:57:28] genesis block created ...
 successfully created genesis block
 ```
 
-> You can also check the usage of `sebak key generate` in [SEBAK Commands](./sebak_command.md#sebak-genesis).
+> You can also check the usage of `sebak key generate` in [SEBAK Commands](http://devteam.blockchainos.org/docs/SEBAK-command/#sebak-genesis).
 
 You should make genesis block in every nodes
 

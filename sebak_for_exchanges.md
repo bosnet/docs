@@ -7,7 +7,7 @@ permalink: /SEBAK-for-exchange/
 
 ## Pre-required Instruction
 
-Before access to Sebak public Testnet, BOScoin devteam strongly recommends to test in your local environment with [standalone mode](Running-Standalone-Mode) & [sebak-angelbot](https://github.com/spikeekips/sebak-angelbot).
+Before access to Sebak public Testnet, BOScoin devteam strongly recommends to test in your local environment with [standalone mode](http://devteam.blockchainos.org/docs/SEBAK-deployment-standalone/) & [sebak-angelbot](https://github.com/spikeekips/sebak-angelbot).
 
 In case of you have seen unexpected errors or have questions,
 
@@ -22,11 +22,11 @@ In case of you have seen unexpected errors or have questions,
 
 ### Sebak Installation
 
-Please check [SEBAK installation](docs/SEBAK-installation/).
+Please check [SEBAK installation](http://devteam.blockchainos.org/docs/SEBAK-installation/).
 
 ### Running Sebak on localhost (a.k.a 'standalone mode')
 
-Please check contents in [standalone mode](docs/SEBAK-deployment-standalone/).
+Please check contents in [standalone mode]http://devteam.blockchainos.org/docs/SEBAK-deployment-standalone/).
 
 ### Installation sebak-angelbot, the account creation tool
 
@@ -36,7 +36,7 @@ You can check specific information in the project page, [sebak-angelbot](https:/
 
 #### How to create account using 'sebak-angelbot'?
 
-- Running sebak node as [standalone](docs/SEBAK-deployment-standalone/) mode.
+- Running sebak node as [standalone](http://devteam.blockchainos.org/docs/SEBAK-deployment-standalone/) mode.
 - Execute sebak command `$ sebak key generate` as much as you want. this key pair will be used to create new account in sebak node. We recommend almost 100 keypair.
 - Open text editor and put secret-keys line by line and save in `sources.txt` file.
 - Running 'sebak-angelbot' in your localhost. In 'sebak-anglebot' command line options, we recommend `--secret-seed` to be secret seed of `genesis account`.

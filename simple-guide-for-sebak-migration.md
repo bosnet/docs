@@ -19,9 +19,9 @@ http://testnet-sebak.blockchainos.org/
 
 Of course you can access when you opend above link aned to send transaction. However before send transaction, you must check SEBAK api at first. 
 
-Here is the [SEBAK API document](https://bosnet.github.io/sebak/api/).
+Here is the [SEBAK API document](https://bosnet.github.io/docs/api/).
 
-So We,BOScoin dev team, **stronly recommend** to test in your local enviroment. You can see the contents [How to test in your local enviroment](https://github.com/bosnet/sebak/wiki/Running-Standalone-Mode).
+So We,BOScoin dev team, **stronly recommend** to test in your local enviroment. You can see the contents [How to test in your local enviroment](http://devteam.blockchainos.org/docs/SEBAK-deployment-standalone/).
 
 At the moment, BOScoin dev team provide SDKs in Python and Javascript. Please check below repositories. 
 

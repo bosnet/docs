@@ -4,7 +4,7 @@ permalink: /SEBAK-command/
 ---
 ---
 # SEBAK command
-To install `sebak` command, please check the [installation guide](./sebak_installation.md).
+To install `sebak` command, please check the [installation guide](http://devteam.blockchainos.org/docs/SEBAK-installation/).
 
 # Options
 ```sh

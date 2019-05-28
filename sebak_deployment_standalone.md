@@ -8,7 +8,7 @@ By the nature of design, SEBAK should be deployed as composition of nodes and th
 
 ## Installation
 
-Please follow the [Installation](./sebak_installation.md). If you are so busy and you already have golang (1.11 or higher) environment, do like this,
+Please follow the [Installation](http://devteam.blockchainos.org/docs/SEBAK-installation/). If you are so busy and you already have golang (1.11 or higher) environment, do like this,
 
 ```sh
 $ git clone https://github.com/bosnet/sebak.git /tmp/sebak-standalone
@@ -26,7 +26,7 @@ You will get the executable `./sebak`. You can use it to deploy.
 
 ## Deploy
 
-> For the detailed deployment instruction, please check [Deploy Network](./sebak_deployment.md).
+> For the detailed deployment instruction, please check [Deploy Network](http://devteam.blockchainos.org/docs/SEBAK-deployment/).
 
 For standalone mode, SEBAK already prepared the special command, `self`. You can simply give only `self` in `--validators` option. Then you will get the standalone mode of SEBAK.
 
@@ -84,7 +84,7 @@ DBUG[10-07|13:47:20] parsed flags:                            module=main
 
 ## Testing
 
-For usage of SEBAK commands, plese check [`sebak` commands](./sebak_command.md).
+For usage of SEBAK commands, plese check [`sebak` commands](http://devteam.blockchainos.org/docs/SEBAK-command/).
 
 ### Creating Account
 
