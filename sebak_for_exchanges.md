@@ -57,7 +57,8 @@ You can check [Sebak API document contents](https://bosnet.github.io/docs/api).
 
     - [sebakjs-util](https://github.com/bosnet/sebakjs-util): Javascript library
     - [sebakpy-util](https://github.com/spikeekips/sebakpy-util): Python library
-    - [sebakjava-util](https://github.com/MegaSolar/sebakJ-util):Java library for sebak
+    - [sebakjava-util](https://github.com/MegaSolar/sebakJ-util): Java library for sebak
+	- [sebakGo-util](https://github.com/soonkuk/sebak-sdk-go): Go library for sebak
 
 ## Instruction test on Public Testnet
 
