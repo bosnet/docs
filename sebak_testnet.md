@@ -33,8 +33,8 @@ When you send a transaction, creating an account or sending a payment, *Testnet*
 | -- |
 | http://testnet-sebak.blockchainos.org| 
 
-> ## Python SDK for sebak is here ; [sebak-pyutil](https://github.com/spikeekips/sebakpy-util)
-> ## Javascript SDK for sebak is here ; [sebak-jsutil](https://github.com/bosnet/sebakjs-util)
+> ## Python SDK for sebak is here ; [sebakpy-util](https://github.com/spikeekips/sebakpy-util)
+> ## Javascript SDK for sebak is here ; [sebakjs-util](https://github.com/bosnet/sebakjs-sdk)
 > ## Creating accounts should use tool, [sebak-angelbot](https://github.com/spikeekips/sebak-angelbot).
 > ## Sebak API documents is here ; [API docs](https://bosnet.github.io/docs/api/).
 

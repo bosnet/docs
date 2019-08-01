@@ -25,7 +25,7 @@ So We,BOScoin dev team, **stronly recommend** to test in your local enviroment. 
 
 At the moment, BOScoin dev team provide SDKs in Python and Javascript. Please check below repositories. 
 
-[sebakjs-util](https://github.com/bosnet/sebakjs-util): Sebak SDK in Javascript
+[sebakjs-sdk](https://github.com/bosnet/sebakjs-sdk): Sebak SDK in Javascript
 
 [sebakpy-util](https://github.com/spikeekips/sebakpy-util): Sebak SDK in Python
 

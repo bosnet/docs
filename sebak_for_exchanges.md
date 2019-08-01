@@ -55,7 +55,7 @@ You can check [Sebak API document contents](https://bosnet.github.io/docs/api).
 * The structure of transaction, you can check in [API doc for Post Transaction](https://bosnet.github.io/docs/api/#trasactions-transactions-post).
 * BOScoin devteam is still developing the official SDK for various language and environments. At this time, you can use these,
 
-    - [sebakjs-util](https://github.com/bosnet/sebakjs-util): Javascript library
+    - [sebakjs-sdk](https://github.com/bosnet/sebakjs-sdk): Javascript library
     - [sebakpy-util](https://github.com/spikeekips/sebakpy-util): Python library
     - [sebakjava-util](https://github.com/MegaSolar/sebakJ-util): Java library for sebak
 	- [sebakGo-util](https://github.com/soonkuk/sebak-sdk-go): Go library for sebak
